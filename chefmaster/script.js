@@ -1,17 +1,27 @@
-document.addEventListener("DOMContentLoaded", () => {
+// Quando o conteúdo da página carregar
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Seleciona todos os botões "Adicionar ao Pedido"
+  const buttons = document.querySelectorAll(".add-to-order");
+
+  // Lista onde os itens serão adicionados
   const lista = document.getElementById("itensPedido");
 
-  // Evento de adicionar item ao pedido
-  document.querySelectorAll(".add-to-order").forEach(button => {
-    button.addEventListener("click", (e) => {
-      const item = e.target.getAttribute("data-item");
-      const price = e.target.getAttribute("data-price");
+  // Adiciona evento a cada botão
+  buttons.forEach(function (btn) {
+    btn.addEventListener("click", function () {
 
-      // Criar item na lista de pedidos
-      const li = document.createElement("li");
-      li.classList.add("list-group-item");
-      li.textContent = `${item} - R$${price}`;
+      var item = this.getAttribute("data-item");
+      var price = this.getAttribute("data-price");
+
+      // Cria o elemento do item
+      var li = document.createElement("li");
+      li.className = "list-group-item";
+      li.textContent = item + " — R$ " + price;
+
+      // Adiciona à lista
       lista.appendChild(li);
     });
   });
+
 });
