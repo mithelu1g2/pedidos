@@ -1,0 +1,98 @@
+/* ========================= GLOBAL ========================= */
+body {
+  background-color: #0b0b0b;
+  color: #f5d88c;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ===================== NAVBAR ===================== */
+.navbar {
+  text-align: center;
+  padding: 20px 0;
+  background: #000;
+  border-bottom: 2px solid #d4a44a;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #f5d88c;
+  margin-bottom: 10px;
+}
+
+/* ========== BANNER IMÓVEL ========== */
+.banner {
+  width: 100%;
+  margin-top: 140px; /* espaço por causa da navbar */
+  position: relative;
+  overflow: hidden; /* garantir que a imagem não saia do container */
+}
+
+.banner img {
+  width: 100%;
+  height: 550px;  /* você pode ajustar a altura como preferir */
+  object-fit: contain;
+  object-position: center; /* mantém a imagem centralizada */
+  border-bottom: 2px solid #d4a44a;
+  border-top: 2px solid #d4a44a;
+}
+
+.menu-centro ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-centro ul li a {
+  color: #f5d88c;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.menu-centro ul li a:hover {
+  color: #fff;
+}
+
+/* ===================== CARD ===================== */
+.card {
+  background-color: #1c1c1c;
+  border: 1px solid #d4a44a;
+}
+
+.card-body {
+  color: #f5d88c;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+.btn-primary {
+  background-color: #d4a44a;
+  border-color: #d4a44a;
+}
+
+.btn-primary:hover {
+  background-color: #f5d88c;
+  border-color: #f5d88c;
+}
+
+/* ===================== LISTA DE PEDIDOS ===================== */
+.lista-pedidos {
+  margin-top: 20px;
+}
+
+.list-group-item {
+  background-color: #0b0b0b;
+  color: #f5d88c;
+  border: 1px solid #d4a44a;
+}
