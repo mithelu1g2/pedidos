@@ -1,98 +1,126 @@
-/* ========================= GLOBAL ========================= */
-body {
-  background-color: #0b0b0b;
-  color: #f5d88c;
+cc/* ===========================
+   ESTILO GERAL
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 
-/* ===================== NAVBAR ===================== */
-.navbar {
-  text-align: center;
-  padding: 20px 0;
-  background: #000;
-  border-bottom: 2px solid #d4a44a;
+body {
+  background: #0b0b0b;
+  color: #f8d77b;
 }
+
+/* ===========================
+   CABEÇALHO
+=========================== */
 
 .logo {
-  font-size: 32px;
-  font-weight: 700;
-  color: #f5d88c;
-  margin-bottom: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 3px;
 }
 
-/* ========== BANNER IMÓVEL ========== */
-.banner {
-  width: 100%;
-  margin-top: 140px; /* espaço por causa da navbar */
-  position: relative;
-  overflow: hidden; /* garantir que a imagem não saia do container */
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar {
+  background: #f7df06 !important;
+  padding: 10px 0;
 }
+
+.navbar-nav .nav-link {
+  font-size: 1.1rem;
+  margin: 0 20px;
+  font-weight: 600;
+  color: #000 !important;
+  transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #8b0000 !important;
+}
+
+/* ===========================
+   BANNER
+=========================== */
 
 .banner img {
   width: 100%;
-  height: 550px;  /* você pode ajustar a altura como preferir */
-  object-fit: contain;
-  object-position: center; /* mantém a imagem centralizada */
-  border-bottom: 2px solid #d4a44a;
-  border-top: 2px solid #d4a44a;
+  height: 500px;
+  display: block;
+  border-bottom: 4px solid #f8d77b;
 }
 
-.menu-centro ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  padding: 0;
-  margin: 0;
-}
+/* ===========================
+   CARDS DO CARDÁPIO
+=========================== */
 
-.menu-centro ul li a {
-  color: #f5d88c;
-  text-decoration: none;
-  font-size: 18px;
-  transition: 0.2s;
-}
-
-.menu-centro ul li a:hover {
-  color: #fff;
-}
-
-/* ===================== CARD ===================== */
 .card {
-  background-color: #1c1c1c;
-  border: 1px solid #d4a44a;
+  border: none;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s;
 }
 
-.card-body {
-  color: #f5d88c;
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
 }
 
 .card-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.card-text {
-  font-size: 1rem;
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .btn-primary {
-  background-color: #d4a44a;
-  border-color: #d4a44a;
+  background: #8b0000;
+  border: none;
+  width: 100%;
+  transition: 0.3s;
 }
 
 .btn-primary:hover {
-  background-color: #f5d88c;
-  border-color: #f5d88c;
+  background: #b30000;
 }
 
-/* ===================== LISTA DE PEDIDOS ===================== */
-.lista-pedidos {
+/* ===========================
+   LISTA DO PEDIDO
+=========================== */
+
+.lista-pedidos ul li {
+  font-size: 1.1rem;
+  background: #ffffff;
+  color: #000;
+  font-weight: 500;
+}
+
+.lista-pedidos ul li span {
+  float: right;
+  font-weight: bold;
+}
+
+.remove-btn {
+  float: right;
+  background: red;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.total-area {
   margin-top: 20px;
-}
-
-.list-group-item {
-  background-color: #0b0b0b;
-  color: #f5d88c;
-  border: 1px solid #d4a44a;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
